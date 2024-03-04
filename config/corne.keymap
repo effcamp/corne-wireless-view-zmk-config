@@ -48,10 +48,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB    &kp F1  &kp F2  &kp F3    &kp F4   &kp F5       &kp C_VOLUME_UP    &kp HOME       &kp UP_ARROW  &kp END    &trans  &kp BSPC
-&kp LALT   &kp F6  &kp F7  &kp F8    &kp F9   &kp F10      &kp K_VOLUME_DOWN  &kp DOWN       &kp DOWN      &kp RIGHT  &trans  &kp DELETE
-&kp LCTRL  &trans  &trans  &trans    &kp F11  &kp F12      &kp C_MUTE         &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &kp ENTER
-                           &kp LGUI  &trans   &kp LSHFT    &kp SPACE          &kp BSPC       &kp RALT
+&kp TAB    &kp F1    &kp F2  &kp F3    &kp F4   &kp F5       &kp C_VOLUME_UP    &kp HOME       &kp UP_ARROW  &kp END    &trans  &kp BSPC
+&kp LALT   &kp F6    &kp F7  &kp F8    &kp F9   &kp F10      &kp K_VOLUME_DOWN  &kp DOWN       &kp DOWN      &kp RIGHT  &trans  &kp DELETE
+&kp LCTRL  &kp CAPS  &trans  &trans    &kp F11  &kp F12      &kp C_MUTE         &kp PAGE_DOWN  &kp PAGE_UP   &trans     &mo 4   &kp ENTER
+                             &kp LGUI  &trans   &kp LSHFT    &kp SPACE          &kp BSPC       &kp RALT
             >;
         };
 
@@ -64,19 +64,19 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR        &kp RPAR         &kp TILDE
-&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &kp PIPE         &kp LBKT        &kp RBKT         &kp GRAVE
-&trans  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &kp BACKSLASH    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR        &kp RPAR         &kp TILDE
+&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5            &kp MINUS  &kp EQUAL      &kp PIPE         &kp LBKT        &kp RBKT         &kp GRAVE
+&trans  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0            &kp UNDER  &kp PLUS       &kp BACKSLASH    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+                          &kp LGUI  &trans    &kp LEFT_SHIFT    &kp SPACE  &kp BACKSPACE  &kp RALT
             >;
         };
 
         layer_4 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans  &trans    &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans      &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR    &trans        &trans        &trans        &trans        &sys_reset    &sys_reset  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans        &trans      &trans  &trans
             >;
         };
     };

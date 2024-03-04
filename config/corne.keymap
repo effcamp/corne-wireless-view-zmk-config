@@ -21,11 +21,22 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y            &kp U        &kp I      &kp O    &kp P     &kp MINUS
-&mt LEFT_ALT ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL            &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                   &kp LGUI  &kp LSHFT  &mo 2    &lt 2 BACKSPACE  &lt 1 SPACE  &kp RALT
+&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T                   &kp Y        &kp U            &kp I      &kp O    &kp P     &kp MINUS
+&mt LEFT_ALT ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp H        &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL            &kp Z  &kp X  &kp C     &kp V  &kp B                   &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
+                                   &kp LGUI  &mo 3  &mt LEFT_SHIFT SPACE    &lt 3 SPACE  &lt 2 BACKSPACE  &kp RALT
             >;
+        };
+
+        gaming {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y        &kp U     &kp I         &kp O    &kp P     &kp MINUS
+&kp ESC    &kp A  &kp S  &kp D  &kp F      &kp G        &kp H        &kp J     &kp K         &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N        &kp M     &kp COMMA     &kp DOT  &kp FSLH  &kp ENTER
+                         &mo 3  &kp LSHFT  &kp SPACE    &lt 2 SPACE  &kp BSPC  &kp LEFT_WIN
+            >;
+
+            label = "Game";
         };
 
         lower_layer {
@@ -37,10 +48,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB    &kp F1  &kp F2  &kp F3    &kp F4   &kp F5       &kp C_VOLUME_UP    &kp HOME       &kp UP_ARROW  &kp END    &trans  &kp BSPC
+&kp LALT   &kp F6  &kp F7  &kp F8    &kp F9   &kp F10      &kp K_VOLUME_DOWN  &kp DOWN       &kp DOWN      &kp RIGHT  &trans  &kp DELETE
+&kp LCTRL  &trans  &trans  &trans    &kp F11  &kp F12      &kp C_MUTE         &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &kp ENTER
+                           &kp LGUI  &trans   &kp LSHFT    &kp SPACE          &kp BSPC       &kp RALT
             >;
         };
 
@@ -53,10 +64,19 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR        &kp RPAR         &kp TILDE
+&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &kp PIPE         &kp LBKT        &kp RBKT         &kp GRAVE
+&trans  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &kp BACKSLASH    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
